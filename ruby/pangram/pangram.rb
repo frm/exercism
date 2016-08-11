@@ -3,9 +3,9 @@ module BookKeeping
 end
 
 module Pangram
-  ALPHABET_LEN = 26
+  ALPHABET = *('a'..'z')
 
   def self.is_pangram?(str)
-    str.downcase.chars.uniq.select { |c| c =~ /[a-z]/ }.length == ALPHABET_LEN
+    (str.downcase.chars & ALPHABET).length == ALPHABET.length
   end
 end
