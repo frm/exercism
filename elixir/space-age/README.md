@@ -1,7 +1,5 @@
 # Space Age
 
-Write a program that, given an age in seconds, calculates how old someone is in terms of a given planet's solar years.
-
 Given an age in seconds, calculate how old someone would be on:
 
    - Earth: orbital period 365.25 Earth days, or 31557600 seconds
@@ -14,7 +12,7 @@ Given an age in seconds, calculate how old someone would be on:
    - Neptune: orbital period 164.79132 Earth years
 
 So if you were told someone were 1,000,000,000 seconds old, you should
-be able to say that they're 31 Earth-years old.
+be able to say that they're 31.69 Earth-years old.
 
 If you're wondering why Pluto didn't make the cut, go watch [this
 youtube video](http://www.youtube.com/watch?v=Z_2gbGXzFbs).
@@ -24,11 +22,8 @@ youtube video](http://www.youtube.com/watch?v=Z_2gbGXzFbs).
 Execute the tests with:
 
 ```bash
-$ elixir bob_test.exs
+$ elixir space_age_test.exs
 ```
-
-(Replace `bob_test.exs` with the name of the test file.)
-
 
 ### Pending tests
 
@@ -53,13 +48,13 @@ Or, you can enable all the tests by commenting out the
 # ExUnit.configure exclude: :pending, trace: true
 ```
 
-For more detailed information about the Elixir track, please
-see the [help page](http://exercism.io/languages/elixir).
+If you're stuck on something, it may help to look at some of
+the [available resources](https://exercism.io/tracks/elixir/resources)
+out there where answers might be found.
 
 ## Source
 
 Partially inspired by Chapter 1 in Chris Pine's online Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=01](http://pine.fm/LearnToProgram/?Chapter=01)
 
-## Submitting Incomplete Problems
+## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-

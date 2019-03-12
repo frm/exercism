@@ -1,6 +1,6 @@
 # Hamming
 
-Write a program that can calculate the Hamming difference between two DNA strands.
+Calculate the Hamming difference between two DNA strands.
 
 A mutation is simply a mistake that occurs during the creation or
 copying of a nucleic acid, in particular DNA. Because nucleic acids are
@@ -31,14 +31,15 @@ The Hamming distance between these two DNA strands is 7.
 
 # Implementation notes
 
-The Hamming distance is only defined for sequences of equal length. This means
-that based on the definition, each language could deal with getting sequences
-of equal length differently.
+The Hamming distance is only defined for sequences of equal length, so
+an attempt to calculate it between sequences of different lengths should
+not work. The general handling of this situation (e.g., raising an
+exception vs returning a special value) may differ between languages.
 
 * * * *
 
 For installation and learning resources, refer to the
-[exercism help page](http://exercism.io/languages/ruby).
+[Ruby resources page](http://exercism.io/languages/ruby/resources).
 
 For running the tests provided, you will need the Minitest gem. Open a
 terminal window and run the following command to install minitest:
@@ -49,21 +50,18 @@ If you would like color output, you can `require 'minitest/pride'` in
 the test file, or note the alternative instruction, below, for running
 the test file.
 
-In order to run the test, you can run the test file from the exercise
-directory. For example, if the test suite is called
-`hello_world_test.rb`, you can run the following command:
+Run the tests from the exercise directory using the following command:
 
-    ruby hello_world_test.rb
+    ruby hamming_test.rb
 
 To include color from the command line:
 
-    ruby -rminitest/pride hello_world_test.rb
+    ruby -r minitest/pride hamming_test.rb
 
-The test files may have the execution bit set so you may also be able to
-run it like this:
-
-    ./hello_world_test.rb
 
 ## Source
 
 The Calculating Point Mutations problem at Rosalind [http://rosalind.info/problems/hamm/](http://rosalind.info/problems/hamm/)
+
+## Submitting Incomplete Solutions
+It's possible to submit an incomplete solution so you can see how others have completed the exercise.
