@@ -4,10 +4,10 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 730c973b0f2f3a99fda36767f6d9c81ac455528238f86799588a4bb6749fc0bd
+-- hash: f33f42efc998b16d5ad2cf15297ba1b6e3b3adc20f16d162aa4735d6b704bf4f
 
 name:           leap
-version:        1.4.0.8
+version:        1.5.1.9
 build-type:     Simple
 
 library
